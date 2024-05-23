@@ -1,6 +1,8 @@
 import ArtWorks from './components/ArtWorks'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Transactions from './components/Transactions'
 
 const App = () => {
   return (
@@ -10,6 +12,8 @@ const App = () => {
       <Hero />
       </div>
       <ArtWorks />
+      <Transactions />
+      <Footer />
     </div>
   )
 }
