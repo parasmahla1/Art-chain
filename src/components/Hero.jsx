@@ -3,7 +3,7 @@ import Identicon from "react-identicons"
 const Hero = () => {
   const HeroImage =
     "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDYvNGE4NmNmOWQtODM2Mi00YmVhLThiMzctZDEyODAxNjUxZTE1LmpwZWc=.jpg";
-  return (
+    return (
     <div className="flex flex-col md:flex-row w-4/5 justify-between items-center mx-auto py-10">
       <div className="md:w-3/6 w-full">
         <div>
