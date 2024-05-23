@@ -1,4 +1,4 @@
-import Logo from "../assets/artchain_white.png";
+import Logo from "../assets/artchain.png";
 const Header = () => {
   return (
     <div className=" w-4/5 flex justify-between md:justify-center items-center py-4 mx-auto">
