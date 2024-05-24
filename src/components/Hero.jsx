@@ -1,9 +1,10 @@
-import Identicon from "react-identicons"
+import Identicon from "react-identicons";
+import { setGlobalState } from "../store";
 
 const Hero = () => {
   const HeroImage =
     "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDYvNGE4NmNmOWQtODM2Mi00YmVhLThiMzctZDEyODAxNjUxZTE1LmpwZWc=.jpg";
-    return (
+  return (
     <div className="flex flex-col md:flex-row w-4/5 justify-between items-center mx-auto py-10">
       <div className="md:w-3/6 w-full">
         <div>
@@ -21,6 +22,7 @@ const Hero = () => {
             className="shadow-xl shadow-black text-white
             bg-[#e32970] hover:bg-[#bd255f]
             rounded-full cursor-pointer p-2"
+            onClick={() => setGlobalState("modal", "scale-100")}
           >
             Create NFT
           </button>
@@ -49,11 +51,15 @@ const Hero = () => {
           alt="NFT Art"
         />
         <div className="flex justify-start items-center p-3">
-            <Identicon className="h-10 w-10 object-contain rounded-full mr-3" string={'0x21...736a'} size={50} />
-            <div>
-                <p className="text-white font-semibold">0x21...736a</p>
-                <small className="text-pink-800 font-bold">@you</small>
-            </div>
+          <Identicon
+            className="h-10 w-10 object-contain rounded-full mr-3"
+            string={"0x21...736a"}
+            size={50}
+          />
+          <div>
+            <p className="text-white font-semibold">0x21...736a</p>
+            <small className="text-pink-800 font-bold">@you</small>
+          </div>
         </div>
       </div>
     </div>
